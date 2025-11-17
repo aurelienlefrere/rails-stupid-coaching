@@ -1,0 +1,41 @@
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+      <div class="card shadow-lg border-0">
+        <div class="card-header bg-gradient text-black text-center py-4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+          <h1 class="mb-0">
+            <i class="bi bi-chat-dots-fill me-2"></i>
+            Stupid Coach
+          </h1>
+          <p class="mb-0 mt-2 opacity-75">Pose-moi n'importe quelle question...</p>
+        </div>
+
+        <div class="card-body p-5">
+          <form action="/answer" data-turbo="false">
+            <div class="mb-4">
+              <label for="question" class="form-label text-muted fw-bold">
+                <i class="bi bi-question-circle me-1"></i>
+                Ta question
+              </label>
+              <input
+                type="text"
+                id="question"
+                name="question"
+                class="form-control form-control-lg shadow-sm"
+                placeholder="Ex: What time is it?"
+                required
+              >
+            </div>
+
+            <div class="d-grid">
+              <button type="submit" class="btn btn-lg btn-primary shadow">
+                <i class="bi bi-send-fill me-2"></i>
+                Ask!
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
